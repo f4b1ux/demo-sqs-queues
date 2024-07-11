@@ -1,0 +1,19 @@
+{
+  "name": "demo-sqs-queues",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/f4b1ux/demo-sqs-queues.git",
+  "author": "Fabio Fioramonti <f.fioramonti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.614.0"
+  },
+  "devDependencies": {
+    "envk": "^3.4.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start:producer": "node -r envk src/producer.js",
+    "start:consumer": "node -r envk src/consumer.js"
+  }
+}
